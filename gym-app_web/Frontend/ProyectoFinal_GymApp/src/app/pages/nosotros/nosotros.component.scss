@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+// variables.scss
+
+#nosotros {
+  background: $primary-color;
+}
+
+
+$color-fondo: #ffffff; // fondo blanco
+$color-texto: #000000; // texto negro
+$color-botones: #dc3545; // botones rojos
+
+$tamaño-botón: 24px; // Tamaño del botón
+$radio-bordes-botón: 8px; // Radio de los bordes del botón
+
+$tamano-imagen: 200px; // Tamaño máximo de la imagen
+.img-fluid {
+    max-width: $tamano-imagen;
+    max-height: $tamano-imagen;
+  }
+
+
+ 
+ 
