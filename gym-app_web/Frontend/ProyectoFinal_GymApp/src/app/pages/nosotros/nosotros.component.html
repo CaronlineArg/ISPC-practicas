@@ -1,50 +1,39 @@
-<section id="nosotros">
-    <div class="container px-5">
-      <div class="row gx-5 align-items-center justify-content-center">
-        <div class="col-lg-8 col-xl-7 col-xxl-6">
-          <div class="my-5 text-center text-xl-start">
-            <h2 class="text-danger text-uppercase font-monospace">
-              <strong>/ Nosotros</strong>
-            </h2>
-            <h3 class="fw-bolder text-dark mb-2 text-uppercase">
-              Gym App: Tu Gym integrado al mundo digital
-            </h3>
-            <p class="fw-normal text-dark-50 mb-4">
-              El mundo cambió, y la forma de entrenar también. Por eso te
-              ofrecemos los servicios de <em>Gym App</em>: la solución app y
-              web que te permite resolver, automatizar y controlar accesos,
-              turnos, planes de entrenamiento y la información clave que
-              necesitas para tu día a día. 
-              Nuestros servicios estan en constante evolución, atendiendo 
-              a las diferentes necesidades de nuestros socios y atentos a las tendencias mundiales en
-              entrenamientos, con el próposito de facilitar el acceso a
-              actividad física de alta calidad.
-            </p>
-          </div>
+<section id="nosotros" class="py-5" [ngStyle]="{'background-color': colorFondo}">
+  <div class="container px-5">
+    <div class="row gx-5 align-items-center justify-content-center">
+      <div class="col-lg-8 col-xl-7 col-xxl-6">
+        <div class="my-5 text-center text-xl-start texto-principal">
+          <h2 class="text-danger text-uppercase font-monospace">
+            <strong>/ Nosotros</strong>
+          </h2>
+          <h3 class="fw-bolder text-dark mb-2 text-uppercase">
+            Gym App: Tu Gym integrado al mundo digital
+          </h3>
+          <p class="fw-normal text-dark-50 mb-4 texto-principal">
+            El mundo cambió, y la forma de entrenar también. Por eso te ofrecemos los servicios de <em>Gym App</em>: la solución app y web que te permite resolver, automatizar y controlar accesos, turnos, planes de entrenamiento y la información clave que necesitas para tu día a día. Nuestros servicios están en constante evolución, atendiendo a las diferentes necesidades de nuestros socios y atentos a las tendencias mundiales en entrenamientos, con el propósito de facilitar el acceso a actividad física de alta calidad.
+          </p>
         </div>
-
-        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
-          <img
-            class="img-fluid rounded-3 my-5"
-            src="./assets/technogym.jpg"
-            alt="..."
-          />
-        </div>
+      </div>
+      <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+        <img
+          class="img-fluid rounded-3 my-5"
+          src="./assets/technogym.jpg"
+          alt="..."
+        />
+      </div>
+      <div class="col-lg-8 text-center">
+        <a routerLink="/planes" class="no-underline">
+          <button type="button" class="btn" [ngStyle]="{'background-color': colorBotones, 'color': colorTextoBoton, 'font-size': tamanioBoton, 'border-radius': radioBordesBoton}">
+            Conocer los planes
+          </button>
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="py-5" [ngStyle]="{'background-color': colorFondo}">
-    <a routerLink="/planes" class="no-underline">
-      <div class="d-grid gap-2 col-4 mx-auto">
-        <button type="button" class="btn" [ngStyle]="{'background-color': colorBotones, 'color': colorTexto, 'font-size': tamanioBoton, 'border-radius': radioBordesBoton}">
-          Conocer los planes
-        </button>
-      </div>
-    </a>
-    <div class="container px-5 my-5">
-  <div class="text-center mb-5"></div>
-
+ 
+<section id="nosotros2" class="py-5">
   <div class="row gx-5">
     <!-- Columna izquierda -->
     <div class="col-lg-6">
@@ -121,14 +110,17 @@
       </div>
     </div>
   </div>
-</div>
 
-    <a  routerLink="/registro" class="no-underline">
-      <div class="d-grid gap-2 col-4 mx-auto">
-        <button type="button" class="btn" [ngStyle]="{'background-color': colorBotones, 'color': colorTexto, 'font-size': tamanioBoton, 'border-radius': radioBordesBoton}">
-          Anotarse ahora
-        </button>
+
+     <div class="col-lg-8 text-center">
+      <a routerLink="/registro" class="no-underline">
+      <button type="button" class="btn" [ngStyle]="{'background-color': colorBotones, 'color': colorTextoBoton, 'font-size': tamanioBoton, 'border-radius': radioBordesBoton}">
+        Anotarse ahora
+      </button>
+       </a>
       </div>
-    </a>
-  </section>
+
+</section>
+  
+
 
